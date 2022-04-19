@@ -25,6 +25,7 @@ function setUser(req, res, next) {
   if (userId) {
     req.user = users.find(user => user.id === userId)
   }
+
   next()
 }
 
